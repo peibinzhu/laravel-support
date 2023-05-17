@@ -1,0 +1,40 @@
+{
+  "name": "peibin/laravel-support",
+  "description": "Peibin support component for Laravel.",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "laravel"
+  ],
+  "authors": [
+    {
+      "name": "Peibin Zhu",
+      "email": "zhupeibin1207@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "peibin/laravel-contracts": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PeibinLaravel\\Support\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PeibinLaravelTest\\Support\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PeibinLaravel\\Support\\SupportServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "prefer-stable": true
+}
